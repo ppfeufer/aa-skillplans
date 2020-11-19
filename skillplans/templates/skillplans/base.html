@@ -1,0 +1,17 @@
+{% extends 'allianceauth/base.html' %}
+
+{% load i18n %}
+
+{% block page_title %}{% translate "Skillplans" %}{% endblock %}
+
+{% block content %}
+    <div class="aa-skillplans">
+        <div class="aa-skillplans-header">
+            {% block skillplans_header %}{% endblock %}
+        </div>
+
+        <div class="aa-skillplans-body">
+            {% block skillplans_body %}{% endblock %}
+        </div>
+    </div>
+{% endblock %}
