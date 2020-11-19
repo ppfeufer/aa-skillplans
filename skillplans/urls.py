@@ -13,4 +13,5 @@ app_name: str = "skillplans"
 
 urlpatterns = [
     url(r"^$", views.dashboard, name="dashboard"),
+    url(r"^add_character/$", views.add_character, name="add_character"),
 ]

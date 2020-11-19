@@ -17,3 +17,16 @@ class AaSkillplansGeneralPermissions(models.Model):
         managed = False
         default_permissions = ()
         permissions = (("basic_access", "Can access the Skillplans module"),)
+
+
+class AaSkillplansCharacter(models.Model):
+    """
+    Character Model
+    """
+
+    @classmethod
+    def get_esi_scopes(cls) -> list:
+        return [
+            "esi-skills.read_skillqueue.v1",
+            "esi-skills.read_skills.v1",
+        ]

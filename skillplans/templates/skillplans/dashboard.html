@@ -2,6 +2,7 @@
 
 {% load i18n %}
 {% load static %}
+{% load humanize %}
 
 {% block skillplans_header %}
     {% translate "Skillplans" as translated_header %}
@@ -9,11 +10,12 @@
 {% endblock %}
 
 {% block skillplans_body %}
-    {% include 'skillplans/partials/dashboard/table.html' %}
+    {% include 'skillplans/partials/dashboard/character_select.html' %}
 {% endblock %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'skillplans/css/aa-bootstrap-fix.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'skillplans/css/character-select.min.css' %}" type="text/css">
 {% endblock %}
 
 {% block extra_javascript %}
