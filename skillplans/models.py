@@ -24,8 +24,18 @@ class AaSkillplansCharacter(models.Model):
     Character Model
     """
 
+    # DB field definitions ...
+
+    class Meta:
+        default_permissions = ()
+
     @classmethod
     def get_esi_scopes(cls) -> list:
+        """
+        returns the ESI scopes needed for this model/module
+        :return:
+        """
+
         return [
             "esi-skills.read_skillqueue.v1",
             "esi-skills.read_skills.v1",
