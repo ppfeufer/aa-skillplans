@@ -6,7 +6,7 @@ setting up our app
 
 import os
 
-from sovtimer import __version__
+from skillplans import __version__
 
 from setuptools import find_packages, setup
 
