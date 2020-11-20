@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
                 ),
             ],
             options={
-                "verbose_name": "Skillplans",
+                "verbose_name": "Skill Plans",
                 "permissions": (("basic_access", "Can access the Skillplans module"),),
                 "managed": False,
                 "default_permissions": (),

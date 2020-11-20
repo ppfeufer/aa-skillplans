@@ -1,4 +1,4 @@
-# AA Skillplans
+# AA Skill Plans
 
 Skillplan module for Alliance Auth
 

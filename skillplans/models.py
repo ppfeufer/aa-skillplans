@@ -13,10 +13,10 @@ class AaSkillplansGeneralPermissions(models.Model):
     """
 
     class Meta:
-        verbose_name = "Skillplans"
+        verbose_name = "Skill Plans"
         managed = False
         default_permissions = ()
-        permissions = (("basic_access", "Can access the Skillplans module"),)
+        permissions = (("basic_access", "Can access the AA Skill Plans module"),)
 
 
 class AaSkillplansCharacter(models.Model):
