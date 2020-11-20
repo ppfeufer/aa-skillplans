@@ -1,5 +1,5 @@
 # AA Skill Plans
 
-Skillplan module for Alliance Auth
+Skill plan module for Alliance Auth
 
 This module is currently under development
