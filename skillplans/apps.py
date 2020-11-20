@@ -16,4 +16,4 @@ class AaSkillplansConfig(AppConfig):
 
     name = "skillplans"
     label = "skillplans"
-    verbose_name = "Skillplans v{}".format(__version__)
+    verbose_name = "Skill Plans v{}".format(__version__)
