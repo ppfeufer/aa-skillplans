@@ -4,24 +4,17 @@
 the views
 """
 
-import datetime as dt
-
-from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.decorators import login_required, permission_required
-from django.db import transaction, models
-from django.db.models import Count, F, Max, Q, Sum
+from django.db import transaction
 from django.http import (
-    JsonResponse,
+    # JsonResponse,
     HttpResponse,
-    HttpResponseNotFound,
-    HttpResponseForbidden,
+    # HttpResponseNotFound,
+    # HttpResponseForbidden,
 )
 from django.shortcuts import render, redirect
-from django.urls import reverse
-from django.utils.timesince import timeuntil
 from django.utils.html import format_html
-from django.utils.timezone import now
-from django.utils.translation import gettext_lazy, gettext
+
 
 from skillplans import __title__
 from skillplans.app_settings import avoid_cdn
