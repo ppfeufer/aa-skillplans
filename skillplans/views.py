@@ -65,6 +65,12 @@ def dashboard(request):
 @permission_required("memberaudit.basic_access")
 @token_required(scopes=AaSkillplansCharacter.get_esi_scopes())
 def add_character(request, token) -> HttpResponse:
+    """
+    adding a character
+    :param request:
+    :param token:
+    :return:
+    """
     token_char = EveCharacter.objects.get(character_id=token.character_id)
 
     try:
@@ -98,3 +104,19 @@ def add_character(request, token) -> HttpResponse:
         )
 
     return redirect("skillplans:dashboard")
+
+
+def remove_character(request, character_id: int):
+    """
+    remove a character
+    :param request:
+    :param character_id:
+    """
+
+
+def character_view(request, character_id: int) -> HttpResponse:
+    """
+    character view
+    :param request:
+    :param character_id:
+    """
